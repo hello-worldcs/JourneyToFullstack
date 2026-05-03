@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="/kirim" method="post">
+        <h2>Login</h2>
+        <div class="data">
+            <label for="Nama">Nama</label>
+            <input type="text" name="Nama" id="Nama">
+        </div>
+
+        <div class="data">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email">
+        </div>
+
+        <div class="data">
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password">
+        </div>
+
+        <div class="data">
+            <label for="Konfirmasi-Password">Konfirmasi Password</label>
+            <input type="password" name="Konfirmasi-Password" id="Konfirmasi-Password" placeholder="Masukkan Kembali Password">
+        </div>
+        
+        <div class="data">
+            <select name="Jurusan" id="Jurusan">
+                <option value="">Pilihan Jurusan</option>
+                <option value="statis">Statistika dan Sains Data</option>
+                <option value="mate">Matematika</option>
+                <option value="ilkom">Ilmu Komputer</option>
+                <option value="aktu">Aktuaria</option>
+                <option value="ai">AI</option>
+            </select>
+        </div>
+
+        <div class="isi-form">
+            <input type="checkbox" name="Ketentuan" id="Ketentuan">
+            <label for="Ketentuan">Saya setuju dengan syarat dan ketentuan</label>
+        </div>
+
+        <button type="submit">Daftar</button>
+
+    </form>
+</body>
+
+</html>

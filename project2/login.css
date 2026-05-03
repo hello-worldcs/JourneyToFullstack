@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body{
+    background: rgb(61, 19, 101);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background: #2a2a3d80;
+    border: 1px solid #1e1e2e;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    
+}
+
+form:hover {
+    background: #1e1e2ecc;
+    border-color: #f5f3ff;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
+input {
+    background: #f5f3ff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+input:focus {
+    outline:none;
+    border:2px solid blueviolet;
+}
+
+label {
+    margin-bottom: 1px;
+    padding: 3px;
+    font-size: 13px;
+}
+
+select {
+    width: 100%;
+    background: #f5f3ff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0 ;
+}
+
+.isi-form {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 10px 0;
+}
+
+#Ketentuan {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+button {
+    font-size: 15px;
+    letter-spacing: 3px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background: #11182740;
+    color: rgb(112, 112, 112);
+    border: 0.5px solid transparent;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    color: white;
+    background: #482289;
+    border: 0.5px solid #f5f3ff;
+}

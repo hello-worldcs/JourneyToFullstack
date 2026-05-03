@@ -1,0 +1,103 @@
+* {
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F0E1;
+}
+
+h1 {
+    font-size: 32px;
+    color: brown;
+    text-align: center;
+}
+
+.desk {
+    font-size: 18px;
+    color: brown;
+    padding: 0 0 0 20px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+img {
+    border-radius: 20%;
+    padding: 4px;
+    border: 3px solid brown;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 50px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hobi-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px 0;
+}
+
+.hobi-card {
+    background-color: brown;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+    gap: 20px;
+}
+
+.biodata {
+    text-align: justify;
+}
+
+.portofolio {
+    color: white;
+    margin: 0;
+    padding: 5px 20px 20px 20px;
+    background-color: brown;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.grid-portofolio {
+    margin: 0;
+    padding: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(39, 37, 37);
+    border-radius: 20px;
+}
+
+.project-card {
+    background-color: #2d2d2d;
+    padding: 0 0 20px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.porto {
+    text-decoration: none;
+    color: blueviolet;
+}
