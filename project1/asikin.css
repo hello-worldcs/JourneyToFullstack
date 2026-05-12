@@ -1,103 +1,303 @@
 * {
-    font-family: tahoma;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI';
 }
 
 body {
-    background-color: #F5F0E1;
+    background: #E1F5EE;
 }
 
-h1 {
-    font-size: 32px;
-    color: brown;
-    text-align: center;
+nav {
+    background: #9FE1CB;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    transition: all 0.2s ease;
 }
 
-.desk {
-    font-size: 18px;
-    color: brown;
-    padding: 0 0 0 20px;
+nav:active {
+    background: #5DCAA5;
 }
 
-p {
-    margin-bottom: 12px;
-}
-
-img {
-    border-radius: 20%;
-    padding: 4px;
-    border: 3px solid brown;
-}
-
-.nav {
+nav ul {
     display: flex;
-    justify-content: space-between;
-    background-color: brown;
-    padding: 10px 20px;
-    margin: 0;
-    border-radius: 50px;
+    gap: 20px;
     list-style: none;
 }
 
-.nav a {
+.title a {
+    letter-spacing: 0px;
+    transition: all 0.2s ease;
+}
+
+.title a:active {
+    letter-spacing: 5px;
+}
+
+.nav-content a {
+    font-weight: 500;
+    letter-spacing: 0px;
+    transition: all 0.2s ease;
+}
+
+.nav-content a:active {
+    letter-spacing: 2px;
+}
+
+.title {
+    font-size: 18px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
-}
-
-.hobi-content {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 0 20px 0;
-}
-
-.hobi-card {
-    background-color: brown;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 12px;
-    font-weight: bold;
-    margin-top: 30px;
 }
 
 .intro {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0 0 20px;
-    gap: 20px;
+    margin: 50px 0 0 0;
+    background: #9FE1CB;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
-.biodata {
+.isi-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    margin-top: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.isi-intro p {
+    padding: 0 15px 25px 15px;
     text-align: justify;
+    font-size: 20px;
+}
+
+.nama {
+    font-weight: bold;
+    color: #F07820;
+}
+
+.kampus {
+    font-weight: bold;
+    color: #0C447C;
+}
+
+.passion {
+    font-weight: bold;
+    color: #A32D2D;
 }
 
 .portofolio {
+    padding: 20px;
+    border: 1px solid transparent;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.portofolio:active {
+    background: #5DCAA5;
+    border: 1px solid black;
+}
+
+.portofolio h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
     color: white;
-    margin: 0;
-    padding: 5px 20px 20px 20px;
-    background-color: brown;
-    border-radius: 20px;
-    text-align: center;
 }
 
 .grid-portofolio {
-    margin: 0;
-    padding: 10px;
-    gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(39, 37, 37);
-    border-radius: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
 
 .project-card {
-    background-color: #2d2d2d;
-    padding: 0 0 20px 0;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.project-card:active {
+    background: #E1F5EE40;
 }
 
 .porto {
-    text-decoration: none;
-    color: blueviolet;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .nav-content a {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .intro {
+        border-top-right-radius: 150px;
+        border-top-left-radius: 150px;
+    }
+
+    .isi-intro {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 50px 0 50px;
+        gap: 30px;
+    }
+
+    .isi-intro p {
+        padding: 25px 15px;
+        font-size: 20px;
+    }
+
+    img {
+        margin: 0;
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .portofolio h2 {
+        font-size: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card a {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    nav {
+        padding: 20px;
+        transition: all 0.4s ease;
+    }
+
+    nav:hover {
+        background: #5DCAA5;
+        border-bottom: 1px solid black;
+    }
+
+    img {
+        margin: 0;
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+    }
+
+    .nav-content a {
+        font-size: 20px;
+        transition: all 0.4s ease;
+    }
+
+    .nav-content a:hover {
+        letter-spacing: 2px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .title a {
+        letter-spacing: 0px;
+        transition: all 0.4s ease;
+    }
+
+    .title a:hover {
+        letter-spacing: 5px;
+    }
+
+    .intro {
+        border-top-right-radius: 200px;
+        border-top-left-radius: 200px;
+    }
+
+    .portofolio {
+        padding: 20px;
+        border: 1px solid transparent;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        transition: all 0.4s ease;
+    }
+
+    .portofolio:hover {
+        background: #5DCAA5;
+        border: 1px solid black;
+    }
+
+    .grid-portofolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        padding: 10px;
+        background: transparent;
+        border-radius: 15px;
+        border: 1px solid white;
+        color: white;
+        transition: all 0.4s ease;
+    }
+
+    .project-card:hover {
+        background: #E1F5EE40;
+    }
+
+    .isi-intro {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 50px 0 50px;
+        gap: 40px;
+    }
+
+
+    .isi-intro p {
+        padding: 15px 25px;
+        font-size: 30px;
+    }
+
+    .portofolio h2 {
+        font-size: 35px;
+    }
+
+    .project-card h3 {
+        font-size: 25px;
+    }
+
+    .project-card a {
+        font-size: 20px;
+    }
+
 }
